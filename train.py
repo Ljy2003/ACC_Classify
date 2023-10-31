@@ -131,7 +131,7 @@ def main():
     model = utils.model[args.model_name]().to(args.device)
     if args.freeze_model:
         print('freeze backbone')
-        model.freeze()
+        model.freeze(args.freeze_layers)
     model.train()
 
     loss_fun = torch.nn.CrossEntropyLoss()
