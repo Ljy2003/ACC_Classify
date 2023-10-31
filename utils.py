@@ -7,10 +7,10 @@ class net_base(nn.Module):
         super(net_base,self).__init__()
         self.backbone=None
     
-    def freeze(self):
+    def freeze(self,n):
         length=len(list(self.parameters()))
         for i,param in enumerate(self.backbone.parameters()):
-            if i < length-20:
+            if i < length-10:
                 param.requires_grad = False
         
 class resnet_18(net_base):
