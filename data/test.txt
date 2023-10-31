@@ -1,0 +1,12 @@
+normal0.png	0
+normal1.png	0
+normal2.png	0
+normal3.png	0
+normal4.png	0
+normal5.png	0
+illness42.png	1
+illness43.png	1
+illness44.png	1
+illness45.png	1
+illness46.png	1
+illness47.png	1
