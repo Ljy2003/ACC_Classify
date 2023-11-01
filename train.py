@@ -37,7 +37,7 @@ def config_parser():
     parser.add_argument('--freeze_model', '-freeze',
                         default=False, action='store_true')
     parser.add_argument('--freeze_layers', type=int,default=0)
-    parser.add_argument('--step_size', default=5)
+    parser.add_argument('--step_size',type=int,default=5)
     parser.add_argument('--gamma', type=float, default=0.5)
 
     return parser
